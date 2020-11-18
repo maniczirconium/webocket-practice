@@ -1,0 +1,25 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>WebSockets 101</title>
+  <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+  <article id="mario-chat" class="app">
+    <div id="chat-window" class="chat-window">
+      <dl id="output" class="chat-box"></dl>
+      <p id="feedback"></p>
+    </div>
+    <input type="text" placeholder="Handle" id="handle">
+    <div class="message-input">
+      <input type="text" id="message" placeholder="Message">
+      <button id="send">Send</button>
+    </div>
+  </article>
+
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/2.3.1/socket.io.js" integrity="sha512-AcZyhRP/tbAEsXCCGlziPun5iFvcSUpEz2jKkx0blkYKbxU81F+iq8FURwPn1sYFeksJ+sDDrI5XujsqSobWdQ==" crossorigin="anonymous"></script>
+  <script src="chat.js"></script>
+</body>
+</html>

@@ -1,0 +1,116 @@
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+:root {
+  font-size: 100%;
+}
+
+body {
+  min-height: 100vh;
+  margin: 0;
+}
+
+.app {
+  height: 100vh;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr auto auto;
+  padding: 1em;
+}
+
+#output, #feedback,
+#handle, .message-input {
+  max-width: 720px;
+  margin: auto;
+}
+
+.chat-window {
+  overflow: auto;
+  align-self: end;
+  max-height: 100%;
+}
+
+input[type="text"] {
+  border: 0;
+  padding: 0.5em 1em;
+  font-size: 1em;
+  margin: 1em auto;
+  width: 90%;
+}
+
+input[type="text"]:focus {
+  outline: none;
+}
+
+#message {
+  background-color: transparent;
+}
+
+#handle {
+  margin-bottom: 0;
+  width: 100%;
+}
+
+#send {
+  border: none;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: dodgerblue;
+  padding: 1em 2em;
+  background-color: transparent;
+  cursor: pointer;
+  align-self: stretch;
+}
+
+#send:hover,
+#send:focus {
+  background-color: dodgerblue;
+  color: white;
+}
+
+#output {
+  padding: 1em;
+  overflow: auto;
+}
+
+dt {
+  color: #666;
+  margin: 0.5em 0;
+  margin-top: 1.5em;
+  width: fit-content;
+  width: -moz-fit-content;
+}
+
+dd {
+  margin: 1px;
+  padding: 1em;
+  background-color: #0001;
+  border-radius: 0.25em 0.5em 0.5em 0.25em;
+  width: fit-content;
+  width: -moz-fit-content;
+}
+
+.message-input {
+  display: flex;
+  align-items: center;
+  margin: auto;
+  width: 100%;
+  background-color: #0001;
+  border-radius: 0.5em;
+  overflow: hidden;
+}
+
+.message-input:focus-within {
+  box-shadow: 0 0 0 2px dodgerblue;
+}
+
+.from-me {
+  margin-left: auto;
+}
+
+dd.from-me {
+  background-color: dodgerblue;
+  color: white;
+  border-radius: 0.5em 0.25em 0.25em 0.5em;
+}
